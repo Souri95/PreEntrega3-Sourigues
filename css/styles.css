@@ -2,6 +2,7 @@
   font-family: "EncodeSans";
   src: url(../fonts/EncodeSans-VariableFont_wdth\,wght.ttf);
 }
+/*Variables*/
 * {
   font-family: EncodeSans;
   margin: 0;
@@ -10,7 +11,7 @@
 }
 
 body {
-  background-color: #F8FAE4;
+  background-color: #FFFBE9;
 }
 
 /* StartTopnavComputadora*/
@@ -18,42 +19,13 @@ body {
   display: flex;
   border: solid black 1px;
   padding: 0.8%;
-  background-color: rgba(0, 128, 0, 0.34);
+  background-color: #AD8B73;
   flex-direction: row;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   overflow: hidden;
 }
-
-.buttonsnavleft {
-  display: flex;
-  align-items: center;
-}
-
-.buttonsnavleft img {
-  object-fit: cover;
-  width: 80px;
-}
-
-.buttonsnavleft a {
-  text-decoration: none;
-}
-
-.buttonsnavleft h1 {
-  color: black;
-  padding-left: 10%;
-  white-space: nowrap;
-  margin-left: 5%;
-}
-
-.buttonsnav button {
-  font-size: medium;
-  padding: 1.5%;
-  margin-right: 1.5%;
-  color: red;
-}
-
 .navtop span {
   white-space: nowrap;
   display: flex;
@@ -61,12 +33,39 @@ body {
   justify-content: space-between;
 }
 
+.buttonsnavleft {
+  display: flex;
+  align-items: center;
+}
+.buttonsnavleft img {
+  object-fit: cover;
+  width: 80px;
+}
+.buttonsnavleft a {
+  text-decoration: none;
+}
+.buttonsnavleft h1 {
+  color: black;
+  padding-left: 10%;
+  white-space: nowrap;
+  margin-left: 5%;
+}
+
 .buttonsnav {
   margin-right: 10%;
+}
+.buttonsnav button {
+  font-size: medium;
+  padding: 1.5%;
+  margin-right: 1.5%;
+  color: red;
 }
 
 .linksnav {
   margin-right: 50px;
+}
+.linksnav a {
+  text-decoration: none;
 }
 
 #lineas {
@@ -102,13 +101,6 @@ body {
     white-space: nowrap;
     margin-left: 5%;
   }
-  .buttonsnav button {
-    font-size: medium;
-    padding: 1.5%;
-    margin-right: 1.5%;
-    color: red;
-    display: none;
-  }
   .navtop span {
     white-space: nowrap;
     display: flex;
@@ -118,6 +110,13 @@ body {
   }
   .buttonsnav {
     margin-right: 10%;
+  }
+  .buttonsnav button {
+    font-size: medium;
+    padding: 1.5%;
+    margin-right: 1.5%;
+    color: red;
+    display: none;
   }
   .linksnav {
     margin-right: 50px;
@@ -152,7 +151,7 @@ body {
   width: 300px;
   border: solid black 1.5px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #fffffd;
   display: flex;
   flex-direction: column;
   margin: 1%;
@@ -168,6 +167,7 @@ body {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
+  max-height: 200px;
 }
 
 .tarjeta_titulo {
@@ -191,7 +191,6 @@ body {
 .contactousuario {
   margin-bottom: 3%;
 }
-
 .contactousuario form {
   display: flex;
   flex-flow: column;
@@ -201,40 +200,33 @@ body {
   margin-top: 3%;
   padding: 1%;
   padding-top: 0.5%;
-  background-color: rgb(255, 255, 252);
+  background-color: #ebdbc3;
   border: solid black 1px;
 }
-
 .contactousuario label {
   padding-bottom: 1%;
   padding-top: 1%;
 }
-
 .contactousuario button {
   margin-top: 1%;
   padding: 1%;
 }
-
 .contactousuario input {
   padding: 0.2%;
   background-color: rgb(245, 245, 245);
 }
-
 .contactousuario textarea {
   padding: 0.2%;
   background-color: rgb(245, 245, 245);
 }
-
 .contactousuario input:focus {
   background-color: white;
   transition: 0.3s;
 }
-
 .contactousuario textarea:focus {
   background-color: white;
   transition: 0.3s;
 }
-
 .contactousuario button:hover {
   box-shadow: 0.5px 0.5px 1px;
 }
@@ -251,7 +243,6 @@ body {
 .nosotros {
   margin-right: 8%;
 }
-
 .nosotros p {
   margin-top: 5px;
 }
