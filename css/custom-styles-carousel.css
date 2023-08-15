@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* Estilos para el carrusel */
+.carousel-container {
+  max-width: 100%; /* Ajusta el ancho según tu diseño */
+  margin: 0 auto;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=custom-styles-carousel.css.map */

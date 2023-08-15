@@ -15,5 +15,8 @@
     "url": "https://github.com/Souri95/PreEntrega3-Sourigues/issues"
   },
   "homepage": "https://github.com/Souri95/PreEntrega3-Sourigues#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
 }
