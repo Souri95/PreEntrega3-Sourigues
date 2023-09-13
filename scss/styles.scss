@@ -72,10 +72,13 @@ $color4: #FFFBE9;
   
   .linksnav {
     margin-right: 50px;
+    text-decoration: none;
     a{
         text-decoration: none;
+        color: blue($color: #0400ff);
+        all: unset;
     }
-  }
+  } 
   
   #lineas {
     display: none;
@@ -110,7 +113,7 @@ $color4: #FFFBE9;
         }
     }
  
-    .navtop span {
+    .buttonsnav {
       white-space: nowrap;
       display: flex;
       align-items: center;
@@ -118,7 +121,6 @@ $color4: #FFFBE9;
       display: none;
     }
     .buttonsnav {
-      margin-right: 10%;
       button {
         font-size: medium;
         padding: 1.5%;
@@ -128,7 +130,7 @@ $color4: #FFFBE9;
       }
     }
     .linksnav {
-      margin-right: 50px;
+      margin-left: 5%;
     }
     #lineas {
       display: block;
@@ -165,6 +167,7 @@ $color4: #FFFBE9;
     flex-direction: column;
     margin: 1%;
     margin-top: 2%;
+ 
   }
   
   .tarjeta:hover {
@@ -190,6 +193,7 @@ $color4: #FFFBE9;
   
   .tarjeta_boton {
     margin: 3%;
+    width: 93%;
   }
   
   .tarjeta_boton:hover {
@@ -368,4 +372,67 @@ $color4: #FFFBE9;
   }
   
 
-  
+  .usuario{
+    display: flex;
+    width: 90%;
+    border: solid black 2px;
+    overflow: hidden;
+    margin:5%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color:white;
+    img{
+      width: auto;
+      height: auto;
+      max-width: 40%;
+      transition:transform 0.7s;
+    }
+    img:hover{
+      transform: rotatey(360deg);
+    }
+    .usuario_caja{
+      margin-left: 2%;
+      position: relative;
+      h3{
+        transition: transform 0.4s;
+        margin-top: 2%;
+      }
+      h3:hover{
+        transform: rotateX(360deg);
+      }
+      p{
+        margin-bottom: 11%;
+      }
+      .llamar{
+        position: absolute;
+        bottom: 1%;
+        text-decoration: none;
+        padding: 1%;
+        border-radius: 7px;
+        a{
+          text-decoration: none;
+        }
+      }
+      .ubicacion{
+        position: absolute;
+        margin-left: 14%;
+        bottom: 1%;
+        text-decoration: none;
+        padding: 1%;
+        border-radius: 7px;
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 760px){
+    .usuario{
+      flex-direction: column;
+      img{
+        width: 80%;
+        max-width: 80%;
+      }
+    }
+  }
